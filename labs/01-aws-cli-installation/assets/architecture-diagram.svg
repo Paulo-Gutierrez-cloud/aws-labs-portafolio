@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa"/>
+  
+  <!-- AWS Cloud boundary -->
+  <rect x="150" y="80" width="500" height="350" fill="none" stroke="#FF9900" stroke-width="3" stroke-dasharray="10,5" rx="10"/>
+  <text x="400" y="60" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#232F3E" text-anchor="middle">AWS Cloud</text>
+  
+  <!-- VPC -->
+  <rect x="200" y="120" width="400" height="280" fill="#E7F3FF" stroke="#0066CC" stroke-width="2" rx="5"/>
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0066CC" text-anchor="middle">VPC (Virtual Private Cloud)</text>
+  
+  <!-- EC2 Instance -->
+  <rect x="280" y="180" width="240" height="180" fill="white" stroke="#FF9900" stroke-width="2" rx="5"/>
+  <text x="400" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#232F3E" text-anchor="middle">Red Hat EC2 Instance</text>
+  
+  <!-- EC2 Icon -->
+  <rect x="370" y="220" width="60" height="50" fill="#FF9900" rx="3"/>
+  <text x="400" y="250" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">EC2</text>
+  
+  <!-- AWS CLI box -->
+  <rect x="300" y="290" width="90" height="40" fill="#4CAF50" stroke="#2E7D32" stroke-width="1" rx="3"/>
+  <text x="345" y="315" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">AWS CLI</text>
+  
+  <!-- IAM box -->
+  <rect x="410" y="290" width="90" height="40" fill="#2196F3" stroke="#1565C0" stroke-width="1" rx="3"/>
+  <text x="455" y="315" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">IAM</text>
+  
+  <!-- User/Laptop icon -->
+  <rect x="30" y="220" width="80" height="60" fill="#607D8B" rx="5"/>
+  <rect x="35" y="225" width="70" height="45" fill="#90A4AE" rx="2"/>
+  <rect x="45" y="273" width="50" height="3" fill="#607D8B"/>
+  <text x="70" y="300" font-family="Arial, sans-serif" font-size="12" fill="#232F3E" text-anchor="middle">User</text>
+  
+  <!-- SSH Connection arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF5722"/>
+    </marker>
+  </defs>
+  <line x1="110" y1="250" x2="270" y2="250" stroke="#FF5722" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <text x="190" y="240" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FF5722" text-anchor="middle">SSH Connection</text>
+  
+  <!-- Legend -->
+  <text x="50" y="460" font-family="Arial, sans-serif" font-size="12" fill="#666" text-anchor="start">Architecture: AWS CLI Installation Lab</text>
+  
+  <!-- Additional labels -->
+  <text x="400" y="355" font-family="Arial, sans-serif" font-size="10" fill="#666" text-anchor="middle">Configured with IAM credentials</text>
+</svg>

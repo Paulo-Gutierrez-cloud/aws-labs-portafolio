@@ -1,0 +1,21 @@
+{
+                "PolicyVersion": {
+                                "Document": {
+                                                "Version": "2012-10-17",
+                                                "Statement": [
+                                                                {
+                                                                                "Sid": "AllowIAMReadAccess",
+                                                                                "Effect": "Allow",
+                                                                                "Action": [
+                                                                                                "iam:Get*",
+                                                                                                "iam:List*"
+                                                                                ],
+                                                                                "Resource": "*"
+                                                                }
+                                                ]
+                                },
+                                "VersionId": "v1",
+                                "IsDefaultVersion": true,
+                                "CreateDate": "2024-01-15T10:00:00Z"
+                }
+}
