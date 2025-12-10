@@ -26,6 +26,22 @@ Instalación y configuración del AWS Command Line Interface en una instancia Re
 
 ---
 
+### 2. [AWS Systems Manager](./labs/02-aws-systems-manager/)
+**Nivel**: Intermedio | **Duración**: ~30 min | **Servicios**: Systems Manager, EC2, IAM
+
+Gestión centralizada de instancias EC2 usando AWS Systems Manager. Incluye Fleet Manager para inventarios, Run Command para ejecución remota, Parameter Store para configuraciones y Session Manager para acceso seguro sin SSH.
+
+**Habilidades desarrolladas**:
+- ✅ Configuración de Fleet Manager para inventarios
+- ✅ Ejecución remota de comandos con Run Command
+- ✅ Gestión de parámetros con Parameter Store
+- ✅ Acceso seguro con Session Manager
+- ✅ Automatización sin SSH tradicional
+
+**[Ver documentación completa →](./labs/02-aws-systems-manager/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -42,13 +58,13 @@ Este portafolio demuestra conocimientos prácticos en:
 
 | Categoría | Labs Completados | En Progreso | Planeados |
 |-----------|------------------|-------------|-----------|
-| **Fundamentos** | 1 | 0 | 3 |
+| **Fundamentos** | 2 | 0 | 2 |
 | **Compute** | 0 | 0 | 2 |
 | **Storage** | 0 | 0 | 2 |
 | **Networking** | 0 | 0 | 2 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 0 | 0 | 2 |
-| **Total** | **1** | **0** | **13** |
+| **Total** | **2** | **0** | **12** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -58,7 +74,7 @@ aws-labs-portafolio/
 ├── .gitignore                         # Protección de credenciales
 ├── labs/
 │   ├── 01-aws-cli-installation/       # Lab 1: AWS CLI
-│   ├── 02-[próximo-lab]/              # Labs futuros
+│   ├── 02-aws-systems-manager/        # Lab 2: Systems Manager
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -119,6 +135,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2024 | **Labs completados**: 1/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 2/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
