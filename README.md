@@ -58,6 +58,38 @@ Creación y despliegue de un sitio web estático en Amazon S3. Incluye configura
 
 ---
 
+### 4. [Creating Amazon EC2 Instances](./labs/04-ec2-instances/)
+**Nivel**: Intermedio | **Duración**: ~45 min | **Servicios**: EC2, IAM, AWS CLI
+
+Lanzamiento de instancias EC2 usando múltiples métodos. Incluye creación desde la consola, uso de bastion hosts, lanzamiento con AWS CLI, configuración con user data, y automatización de despliegues.
+
+**Habilidades desarrolladas**:
+- ✅ Lanzamiento de EC2 desde consola y CLI
+- ✅ Configuración de bastion hosts
+- ✅ Uso de EC2 Instance Connect
+- ✅ Automatización con user data scripts
+- ✅ Gestión de AMIs y security groups
+
+**[Ver documentación completa →](./labs/04-ec2-instances/)**
+
+---
+
+### 5. [Troubleshooting EC2 Instance Creation](./labs/05-ec2-troubleshooting/)
+**Nivel**: Intermedio-Avanzado | **Duración**: ~45 min | **Servicios**: EC2, AWS CLI, Troubleshooting
+
+Troubleshooting y resolución de problemas en la creación de instancias EC2. Incluye identificación de errores, uso de herramientas de diagnóstico (nmap), despliegue de LAMP stack, y verificación de aplicaciones web.
+
+**Habilidades desarrolladas**:
+- ✅ Troubleshooting sistemático de AWS CLI
+- ✅ Diagnóstico con nmap y logs
+- ✅ Resolución de problemas de security groups
+- ✅ Despliegue y verificación de LAMP stack
+- ✅ Análisis de logs de cloud-init
+
+**[Ver documentación completa →](./labs/05-ec2-troubleshooting/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -75,12 +107,12 @@ Este portafolio demuestra conocimientos prácticos en:
 | Categoría | Labs Completados | En Progreso | Planeados |
 |-----------|------------------|-------------|-----------|
 | **Fundamentos** | 2 | 0 | 2 |
-| **Compute** | 0 | 0 | 2 |
+| **Compute** | 2 | 0 | 0 |
 | **Storage** | 1 | 0 | 1 |
 | **Networking** | 0 | 0 | 2 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 0 | 0 | 2 |
-| **Total** | **3** | **0** | **11** |
+| **Total** | **5** | **0** | **9** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -92,6 +124,8 @@ aws-labs-portafolio/
 │   ├── 01-aws-cli-installation/       # Lab 1: AWS CLI
 │   ├── 02-aws-systems-manager/        # Lab 2: Systems Manager
 │   ├── 03-s3-static-website/          # Lab 3: S3 Static Website
+│   ├── 04-ec2-instances/              # Lab 4: Creating EC2 Instances
+│   ├── 05-ec2-troubleshooting/        # Lab 5: EC2 Troubleshooting
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -152,6 +186,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 3/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 5/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!

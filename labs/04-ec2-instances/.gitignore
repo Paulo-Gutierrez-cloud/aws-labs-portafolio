@@ -1,0 +1,28 @@
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore temporary files
+*.tmp
+*.log
+*.bak
+
+# Ignore AWS credentials
+*.pem
+*.ppk
+credentials
+config
+
+# Ignore build artifacts
+*.zip
+*.tar.gz
+
+# Ignore downloaded files
+lab-app.zip

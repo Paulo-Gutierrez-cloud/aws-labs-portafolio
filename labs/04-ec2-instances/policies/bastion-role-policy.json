@@ -1,0 +1,22 @@
+{
+                "Version": "2012-10-17",
+                "Statement": [
+                                {
+                                                "Effect": "Allow",
+                                                "Action": [
+                                                                "ec2:Describe*",
+                                                                "ec2:RunInstances",
+                                                                "ec2:CreateTags"
+                                                ],
+                                                "Resource": "*"
+                                },
+                                {
+                                                "Effect": "Allow",
+                                                "Action": [
+                                                                "ssm:GetParameter",
+                                                                "ssm:GetParameters"
+                                                ],
+                                                "Resource": "arn:aws:ssm:*:*:parameter/aws/service/ami-amazon-linux-latest/*"
+                                }
+                ]
+}

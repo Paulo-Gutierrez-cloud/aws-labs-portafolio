@@ -1,0 +1,67 @@
+# EC2 Troubleshooting Lab - Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        AWS Cloud                            │
+│  ┌───────────────────────────────────────────────────────┐  │
+│  │                    Cafe VPC                           │  │
+│  │  ┌─────────────────────────────────────────────────┐  │  │
+│  │  │            Public Subnet                        │  │  │
+│  │  │                                                 │  │  │
+│  │  │  ┌──────────────┐      ┌──────────────────┐    │  │  │
+│  │  │  │  CLI Host    │      │  LAMP Instance   │    │  │  │
+│  │  │  │              │      │  (cafeserver)    │    │  │  │
+│  │  │  │  AWS CLI     │──────│                  │    │  │  │
+│  │  │  └──────────────┘      │  - Apache        │    │  │  │
+│  │  │                        │  - MariaDB       │    │  │  │
+│  │  │                        │  - PHP           │    │  │  │
+│  │  │                        │  - Café App      │    │  │  │
+│  │  │                        └──────────────────┘    │  │  │
+│  │  │                              │                 │  │  │
+│  │  │                        Security Group          │  │  │
+│  │  │                        Ports: 22, 80           │  │  │
+│  │  └─────────────────────────────────────────────────┘  │  │
+│  └───────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+         │                                    │
+         │ EC2 Instance Connect               │ HTTP (Port 80)
+         │                                    │
+    ┌────┴─────┐                         ┌───┴────┐
+    │   User   │                         │Browser │
+    │  (Admin) │                         │ (Café) │
+    └──────────┘                         └────────┘
+
+Troubleshooting Tools:
+- nmap: Port scanning
+- cloud-init logs: User data verification
+- systemctl: Service status
+```
+
+## Components
+
+### CLI Host
+- Purpose: Execute AWS CLI commands
+- Access: EC2 Instance Connect
+- Tools: AWS CLI, nmap
+
+### LAMP Instance
+- OS: Amazon Linux 2
+- Web Server: Apache (httpd)
+- Database: MariaDB
+- Language: PHP
+- Application: Café Web Application
+
+### Security Configuration
+- Port 22: SSH access
+- Port 80: HTTP web traffic
+
+## Troubleshooting Flow
+
+1. **Issue #1**: Invalid AMI ID
+   - Error: AMI not found in region
+   - Solution: Use correct regional AMI
+
+2. **Issue #2**: Web server not accessible
+   - Check: Security group port 80
+   - Check: httpd service running
+   - Tool: nmap for port verification

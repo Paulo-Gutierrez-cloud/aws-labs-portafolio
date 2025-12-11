@@ -1,0 +1,19 @@
+#!/bin/bash
+# Install Apache, MariaDB, and PHP
+yum -y install httpd mariadb-server php
+
+# Download and extract Café application
+cd /var/www/html
+wget https://aws-tc-largeobjects.s3.us-west-2.amazonaws.com/CUR-TF-100-RSJAWS-1-23732/176-lab-JAWS-troubleshooting-ec2/s3/cafe-app.tar.gz
+tar -zxvf cafe-app.tar.gz
+rm cafe-app.tar.gz
+
+# Configure database
+chkconfig mariadb on
+service mariadb start
+cd cafe/setup
+./create-db.sh
+
+# Start and enable Apache
+chkconfig httpd on
+service httpd start
