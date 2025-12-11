@@ -42,6 +42,22 @@ Gestión centralizada de instancias EC2 usando AWS Systems Manager. Incluye Flee
 
 ---
 
+### 3. [Creating a Website on S3](./labs/03-s3-static-website/)
+**Nivel**: Intermedio | **Duración**: ~45 min | **Servicios**: S3, IAM, AWS CLI
+
+Creación y despliegue de un sitio web estático en Amazon S3. Incluye configuración de buckets, gestión de permisos IAM, automatización de despliegues con scripts bash, y optimización con aws s3 sync.
+
+**Habilidades desarrolladas**:
+- ✅ Creación y configuración de buckets S3
+- ✅ Hosting de sitios web estáticos en S3
+- ✅ Gestión de usuarios y políticas IAM
+- ✅ Automatización de despliegues con scripts
+- ✅ Optimización con aws s3 sync
+
+**[Ver documentación completa →](./labs/03-s3-static-website/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -60,11 +76,11 @@ Este portafolio demuestra conocimientos prácticos en:
 |-----------|------------------|-------------|-----------|
 | **Fundamentos** | 2 | 0 | 2 |
 | **Compute** | 0 | 0 | 2 |
-| **Storage** | 0 | 0 | 2 |
+| **Storage** | 1 | 0 | 1 |
 | **Networking** | 0 | 0 | 2 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 0 | 0 | 2 |
-| **Total** | **2** | **0** | **12** |
+| **Total** | **3** | **0** | **11** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -75,6 +91,7 @@ aws-labs-portafolio/
 ├── labs/
 │   ├── 01-aws-cli-installation/       # Lab 1: AWS CLI
 │   ├── 02-aws-systems-manager/        # Lab 2: Systems Manager
+│   ├── 03-s3-static-website/          # Lab 3: S3 Static Website
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -135,6 +152,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 2/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 3/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
