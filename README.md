@@ -90,6 +90,22 @@ Troubleshooting y resolución de problemas en la creación de instancias EC2. In
 
 ---
 
+### 6. [Scaling and Load Balancing Your Architecture](./labs/06-auto-scaling-load-balancing/)
+**Nivel**: Intermedio-Avanzado | **Duración**: ~45 min | **Servicios**: ELB, Auto Scaling, CloudWatch
+
+Implementación de alta disponibilidad y escalabilidad automática usando Elastic Load Balancing y Auto Scaling. Incluye creación de AMIs, configuración de load balancers, launch templates, Auto Scaling groups, y monitoreo con CloudWatch.
+
+**Habilidades desarrolladas**:
+- ✅ Creación de AMIs desde instancias
+- ✅ Configuración de Application Load Balancer
+- ✅ Implementación de Auto Scaling groups
+- ✅ Políticas de escalado basadas en métricas
+- ✅ Monitoreo con CloudWatch alarms
+
+**[Ver documentación completa →](./labs/06-auto-scaling-load-balancing/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -107,12 +123,12 @@ Este portafolio demuestra conocimientos prácticos en:
 | Categoría | Labs Completados | En Progreso | Planeados |
 |-----------|------------------|-------------|-----------|
 | **Fundamentos** | 2 | 0 | 2 |
-| **Compute** | 2 | 0 | 0 |
+| **Compute** | 3 | 0 | 0 |
 | **Storage** | 1 | 0 | 1 |
 | **Networking** | 0 | 0 | 2 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 0 | 0 | 2 |
-| **Total** | **5** | **0** | **9** |
+| **Total** | **6** | **0** | **8** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -126,6 +142,7 @@ aws-labs-portafolio/
 │   ├── 03-s3-static-website/          # Lab 3: S3 Static Website
 │   ├── 04-ec2-instances/              # Lab 4: Creating EC2 Instances
 │   ├── 05-ec2-troubleshooting/        # Lab 5: EC2 Troubleshooting
+│   ├── 06-auto-scaling-load-balancing/ # Lab 6: Auto Scaling & ELB
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -186,6 +203,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 5/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 6/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
