@@ -122,6 +122,22 @@ Implementación completa de Auto Scaling usando AWS CLI. Incluye creación de in
 
 ---
 
+### 8. [Automation with CloudFormation](./labs/08-cloudformation/)
+**Nivel**: Intermedio | **Duración**: ~45 min | **Servicios**: CloudFormation, VPC, EC2, S3
+
+Implementación de Infrastructure as Code usando AWS CloudFormation. Incluye creación de templates YAML, despliegue de stacks, actualización de recursos, uso de parámetros y referencias, y gestión del ciclo de vida completo de infraestructura.
+
+**Habilidades desarrolladas**:
+- ✅ Creación de templates CloudFormation en YAML
+- ✅ Despliegue y actualización de stacks
+- ✅ Uso de parámetros y referencias (!Ref)
+- ✅ Infrastructure as Code (IaC)
+- ✅ Gestión automática de recursos
+
+**[Ver documentación completa →](./labs/08-cloudformation/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -138,13 +154,13 @@ Este portafolio demuestra conocimientos prácticos en:
 
 | Categoría | Labs Completados | En Progreso | Planeados |
 |-----------|------------------|-------------|-----------|
-| **Fundamentos** | 2 | 0 | 2 |
+| **Fundamentos** | 3 | 0 | 1 |
 | **Compute** | 4 | 0 | 0 |
 | **Storage** | 1 | 0 | 1 |
 | **Networking** | 0 | 0 | 2 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 0 | 0 | 2 |
-| **Total** | **7** | **0** | **7** |
+| **Total** | **8** | **0** | **6** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -160,6 +176,7 @@ aws-labs-portafolio/
 │   ├── 05-ec2-troubleshooting/        # Lab 5: EC2 Troubleshooting
 │   ├── 06-auto-scaling-load-balancing/ # Lab 6: Auto Scaling & ELB
 │   ├── 07-auto-scaling-cli/           # Lab 7: Auto Scaling CLI
+│   ├── 08-cloudformation/             # Lab 8: CloudFormation
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -220,6 +237,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 7/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 8/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
