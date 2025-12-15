@@ -106,6 +106,22 @@ Implementación de alta disponibilidad y escalabilidad automática usando Elasti
 
 ---
 
+### 7. [Using Auto Scaling in AWS (Linux)](./labs/07-auto-scaling-cli/)
+**Nivel**: Intermedio-Avanzado | **Duración**: ~45 min | **Servicios**: Auto Scaling, ELB, AWS CLI
+
+Implementación completa de Auto Scaling usando AWS CLI. Incluye creación de instancias EC2, generación de AMIs, configuración de load balancers, launch templates, y Auto Scaling groups completamente automatizado vía comandos CLI.
+
+**Habilidades desarrolladas**:
+- ✅ Creación de instancias con AWS CLI
+- ✅ Generación de AMIs con comandos CLI
+- ✅ Automatización completa de Auto Scaling
+- ✅ Configuración de load balancers vía CLI
+- ✅ Scripting de infraestructura escalable
+
+**[Ver documentación completa →](./labs/07-auto-scaling-cli/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -123,12 +139,12 @@ Este portafolio demuestra conocimientos prácticos en:
 | Categoría | Labs Completados | En Progreso | Planeados |
 |-----------|------------------|-------------|-----------|
 | **Fundamentos** | 2 | 0 | 2 |
-| **Compute** | 3 | 0 | 0 |
+| **Compute** | 4 | 0 | 0 |
 | **Storage** | 1 | 0 | 1 |
 | **Networking** | 0 | 0 | 2 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 0 | 0 | 2 |
-| **Total** | **6** | **0** | **8** |
+| **Total** | **7** | **0** | **7** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -143,6 +159,7 @@ aws-labs-portafolio/
 │   ├── 04-ec2-instances/              # Lab 4: Creating EC2 Instances
 │   ├── 05-ec2-troubleshooting/        # Lab 5: EC2 Troubleshooting
 │   ├── 06-auto-scaling-load-balancing/ # Lab 6: Auto Scaling & ELB
+│   ├── 07-auto-scaling-cli/           # Lab 7: Auto Scaling CLI
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -203,6 +220,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 6/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 7/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
