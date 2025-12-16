@@ -138,6 +138,22 @@ Implementación de Infrastructure as Code usando AWS CloudFormation. Incluye cre
 
 ---
 
+### 9. [Amazon Route 53 Failover Routing](./labs/09-route53-failover/)
+**Nivel**: Intermedio | **Duración**: ~45 min | **Servicios**: Route 53, SNS, EC2
+
+Implementación de alta disponibilidad con Route 53 failover routing. Incluye configuración de health checks, registros DNS de failover, notificaciones SNS, y verificación de failover automático entre Availability Zones.
+
+**Habilidades desarrolladas**:
+- ✅ Configuración de Route 53 health checks
+- ✅ Implementación de failover routing
+- ✅ Configuración de SNS para alertas
+- ✅ Alta disponibilidad multi-AZ
+- ✅ Gestión de registros DNS
+
+**[Ver documentación completa →](./labs/09-route53-failover/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -157,10 +173,10 @@ Este portafolio demuestra conocimientos prácticos en:
 | **Fundamentos** | 3 | 0 | 1 |
 | **Compute** | 4 | 0 | 0 |
 | **Storage** | 1 | 0 | 1 |
-| **Networking** | 0 | 0 | 2 |
+| **Networking** | 1 | 0 | 1 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 0 | 0 | 2 |
-| **Total** | **8** | **0** | **6** |
+| **Total** | **9** | **0** | **5** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -177,6 +193,7 @@ aws-labs-portafolio/
 │   ├── 06-auto-scaling-load-balancing/ # Lab 6: Auto Scaling & ELB
 │   ├── 07-auto-scaling-cli/           # Lab 7: Auto Scaling CLI
 │   ├── 08-cloudformation/             # Lab 8: CloudFormation
+│   ├── 09-route53-failover/           # Lab 9: Route 53 Failover
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -237,6 +254,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 8/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 9/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
