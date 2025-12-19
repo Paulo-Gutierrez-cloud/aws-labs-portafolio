@@ -1,0 +1,61 @@
+# CloudWatch Events Cron Expression Examples
+
+## Basic Syntax
+```
+cron(Minutes Hours Day-of-month Month Day-of-week Year)
+```
+
+All times are in UTC.
+
+## Examples for Lab
+
+### 8 PM Every Day Mon-Sat (UTC timezone)
+```
+cron(0 20 ? * MON-SAT *)
+```
+
+### 8 PM Every Day Mon-Sat (EST = UTC-5)
+```
+cron(0 1 ? * TUE-SUN *)
+```
+Note: 8 PM EST = 1 AM UTC next day
+
+### 8 PM Every Day Mon-Sat (PST = UTC-8)
+```
+cron(0 4 ? * TUE-SUN *)
+```
+Note: 8 PM PST = 4 AM UTC next day
+
+## Testing Examples
+
+### Every 5 minutes
+```
+cron(0/5 * * * ? *)
+```
+
+### Every hour
+```
+cron(0 * * * ? *)
+```
+
+### Every day at noon UTC
+```
+cron(0 12 * * ? *)
+```
+
+## Field Values
+
+- **Minutes**: 0-59
+- **Hours**: 0-23
+- **Day-of-month**: 1-31
+- **Month**: 1-12 or JAN-DEC
+- **Day-of-week**: 1-7 or SUN-SAT
+- **Year**: 1970-2199
+
+## Special Characters
+
+- **?**: No specific value (use in day-of-month or day-of-week)
+- **\***: All values
+- **,**: List of values (e.g., MON,WED,FRI)
+- **-**: Range of values (e.g., MON-FRI)
+- **/**: Increments (e.g., 0/15 = every 15 minutes)

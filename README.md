@@ -154,6 +154,22 @@ Implementación de alta disponibilidad con Route 53 failover routing. Incluye co
 
 ---
 
+### 10. [Working with AWS Lambda](./labs/10-lambda-functions/)
+**Nivel**: Intermedio-Avanzado | **Duración**: ~60 min | **Servicios**: Lambda, SNS, CloudWatch, Systems Manager
+
+Implementación de soluciones serverless con AWS Lambda. Incluye creación de Lambda layers, funciones con acceso a VPC, integración con SNS, triggers programados con CloudWatch Events, y troubleshooting con CloudWatch Logs.
+
+**Habilidades desarrolladas**:
+- ✅ Creación de Lambda layers
+- ✅ Funciones Lambda con VPC
+- ✅ Triggers CloudWatch Events (Cron)
+- ✅ Integración con SNS
+- ✅ Troubleshooting con CloudWatch Logs
+
+**[Ver documentación completa →](./labs/10-lambda-functions/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -175,8 +191,8 @@ Este portafolio demuestra conocimientos prácticos en:
 | **Storage** | 1 | 0 | 1 |
 | **Networking** | 1 | 0 | 1 |
 | **Security** | 0 | 0 | 2 |
-| **Serverless** | 0 | 0 | 2 |
-| **Total** | **9** | **0** | **5** |
+| **Serverless** | 1 | 0 | 1 |
+| **Total** | **10** | **0** | **4** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -194,6 +210,7 @@ aws-labs-portafolio/
 │   ├── 07-auto-scaling-cli/           # Lab 7: Auto Scaling CLI
 │   ├── 08-cloudformation/             # Lab 8: CloudFormation
 │   ├── 09-route53-failover/           # Lab 9: Route 53 Failover
+│   ├── 10-lambda-functions/           # Lab 10: AWS Lambda
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -254,6 +271,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 9/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 10/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
