@@ -186,6 +186,22 @@ Migración de base de datos local a Amazon RDS. Incluye creación de instancia R
 
 ---
 
+### 12. [Configuring a VPC](./labs/12-vpc-configuration/)
+**Nivel**: Fundamental | **Duración**: ~45 min | **Servicios**: VPC, EC2, NAT Gateway
+
+Construcción completa de VPC desde cero. Incluye creación de subnets públicas y privadas, configuración de Internet Gateway, NAT Gateway, route tables, y despliegue de bastion server para acceso seguro a recursos privados.
+
+**Habilidades desarrolladas**:
+- ✅ Creación y configuración de VPC
+- ✅ Subnets públicas y privadas
+- ✅ Internet Gateway y NAT Gateway
+- ✅ Configuración de route tables
+- ✅ Bastion server deployment
+
+**[Ver documentación completa →](./labs/12-vpc-configuration/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -205,10 +221,10 @@ Este portafolio demuestra conocimientos prácticos en:
 | **Fundamentos** | 3 | 0 | 1 |
 | **Compute** | 4 | 0 | 0 |
 | **Storage** | 2 | 0 | 0 |
-| **Networking** | 1 | 0 | 1 |
+| **Networking** | 2 | 0 | 0 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 1 | 0 | 1 |
-| **Total** | **11** | **0** | **3** |
+| **Total** | **12** | **0** | **2** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -228,6 +244,7 @@ aws-labs-portafolio/
 │   ├── 09-route53-failover/           # Lab 9: Route 53 Failover
 │   ├── 10-lambda-functions/           # Lab 10: AWS Lambda
 │   ├── 11-rds-migration/              # Lab 11: RDS Migration
+│   ├── 12-vpc-configuration/          # Lab 12: VPC Configuration
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -288,6 +305,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 11/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 12/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
