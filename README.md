@@ -202,6 +202,22 @@ Construcción completa de VPC desde cero. Incluye creación de subnets públicas
 
 ---
 
+### 13. [Troubleshooting a VPC](./labs/13-vpc-troubleshooting/)
+**Nivel**: Intermedio-Avanzado | **Duración**: ~75 min | **Servicios**: VPC, Flow Logs, S3, AWS CLI
+
+Troubleshooting avanzado de VPC. Incluye creación y análisis de VPC Flow Logs, resolución de problemas de security groups, network ACLs, route tables, y análisis de tráfico de red con herramientas Linux.
+
+**Habilidades desarrolladas**:
+- ✅ Creación de VPC Flow Logs
+- ✅ Troubleshooting de security groups
+- ✅ Troubleshooting de network ACLs
+- ✅ Análisis de flow logs
+- ✅ Diagnóstico de conectividad
+
+**[Ver documentación completa →](./labs/13-vpc-troubleshooting/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -222,9 +238,9 @@ Este portafolio demuestra conocimientos prácticos en:
 | **Compute** | 4 | 0 | 0 |
 | **Storage** | 2 | 0 | 0 |
 | **Networking** | 2 | 0 | 0 |
-| **Security** | 0 | 0 | 2 |
+| **Security** | 1 | 0 | 1 |
 | **Serverless** | 1 | 0 | 1 |
-| **Total** | **12** | **0** | **2** |
+| **Total** | **13** | **0** | **1** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -245,6 +261,7 @@ aws-labs-portafolio/
 │   ├── 10-lambda-functions/           # Lab 10: AWS Lambda
 │   ├── 11-rds-migration/              # Lab 11: RDS Migration
 │   ├── 12-vpc-configuration/          # Lab 12: VPC Configuration
+│   ├── 13-vpc-troubleshooting/        # Lab 13: VPC Troubleshooting
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -305,6 +322,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 12/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 13/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
