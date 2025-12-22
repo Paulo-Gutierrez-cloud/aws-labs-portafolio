@@ -170,6 +170,22 @@ Implementación de soluciones serverless con AWS Lambda. Incluye creación de La
 
 ---
 
+### 11. [Migrating to Amazon RDS](./labs/11-rds-migration/)
+**Nivel**: Intermedio | **Duración**: ~60 min | **Servicios**: RDS, EC2, Systems Manager, CloudWatch
+
+Migración de base de datos local a Amazon RDS. Incluye creación de instancia RDS con AWS CLI, configuración de subnets privadas y security groups, migración de datos con mysqldump, y monitoreo con CloudWatch metrics.
+
+**Habilidades desarrolladas**:
+- ✅ Creación de RDS con AWS CLI
+- ✅ Migración de bases de datos
+- ✅ Configuración de DB subnet groups
+- ✅ Monitoreo con CloudWatch
+- ✅ Gestión de Parameter Store
+
+**[Ver documentación completa →](./labs/11-rds-migration/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -188,11 +204,11 @@ Este portafolio demuestra conocimientos prácticos en:
 |-----------|------------------|-------------|-----------|
 | **Fundamentos** | 3 | 0 | 1 |
 | **Compute** | 4 | 0 | 0 |
-| **Storage** | 1 | 0 | 1 |
+| **Storage** | 2 | 0 | 0 |
 | **Networking** | 1 | 0 | 1 |
 | **Security** | 0 | 0 | 2 |
 | **Serverless** | 1 | 0 | 1 |
-| **Total** | **10** | **0** | **4** |
+| **Total** | **11** | **0** | **3** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -211,6 +227,7 @@ aws-labs-portafolio/
 │   ├── 08-cloudformation/             # Lab 8: CloudFormation
 │   ├── 09-route53-failover/           # Lab 9: Route 53 Failover
 │   ├── 10-lambda-functions/           # Lab 10: AWS Lambda
+│   ├── 11-rds-migration/              # Lab 11: RDS Migration
 │   └── ...
 └── resources/
     ├── templates/                     # Plantillas reutilizables
@@ -271,6 +288,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 10/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 11/14
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
