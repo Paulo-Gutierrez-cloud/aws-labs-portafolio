@@ -218,6 +218,22 @@ Troubleshooting avanzado de VPC. Incluye creación y análisis de VPC Flow Logs,
 
 ---
 
+### 14. [Working with Amazon EBS](./labs/14-amazon-ebs/)
+**Nivel**: Fundamental | **Duración**: ~45 min | **Servicios**: EBS, EC2, S3
+
+Gestión completa de Amazon Elastic Block Store. Incluye creación de volúmenes EBS, adjuntar y montar volúmenes, crear sistemas de archivos ext3, snapshots para backup, y restauración de volúmenes desde snapshots.
+
+**Habilidades desarrolladas**:
+- ✅ Creación y gestión de volúmenes EBS
+- ✅ Montaje de filesystems en Linux
+- ✅ Creación de snapshots
+- ✅ Restauración desde snapshots
+- ✅ Gestión de almacenamiento persistente
+
+**[Ver documentación completa →](./labs/14-amazon-ebs/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -234,13 +250,13 @@ Este portafolio demuestra conocimientos prácticos en:
 
 | Categoría | Labs Completados | En Progreso | Planeados |
 |-----------|------------------|-------------|-----------|
-| **Fundamentos** | 3 | 0 | 1 |
+| **Fundamentos** | 4 | 0 | 0 |
 | **Compute** | 4 | 0 | 0 |
 | **Storage** | 2 | 0 | 0 |
 | **Networking** | 2 | 0 | 0 |
 | **Security** | 1 | 0 | 1 |
 | **Serverless** | 1 | 0 | 1 |
-| **Total** | **13** | **0** | **1** |
+| **Total** | **14** | **0** | **0** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -262,7 +278,7 @@ aws-labs-portafolio/
 │   ├── 11-rds-migration/              # Lab 11: RDS Migration
 │   ├── 12-vpc-configuration/          # Lab 12: VPC Configuration
 │   ├── 13-vpc-troubleshooting/        # Lab 13: VPC Troubleshooting
-│   └── ...
+│   └── 14-amazon-ebs/                 # Lab 14: Amazon EBS
 └── resources/
     ├── templates/                     # Plantillas reutilizables
     └── common-scripts/                # Scripts compartidos
@@ -322,6 +338,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 13/14
+**Última actualización**: Diciembre 2025 | **Labs completados**: 14/14 ✅ **100% COMPLETO**
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!
