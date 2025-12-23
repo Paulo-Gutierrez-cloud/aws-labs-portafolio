@@ -234,6 +234,54 @@ Gestión completa de Amazon Elastic Block Store. Incluye creación de volúmenes
 
 ---
 
+### 15. [Managing Storage](./labs/15-managing-storage/)
+**Nivel**: Avanzado | **Duración**: ~45 min | **Servicios**: EBS, S3, EC2, IAM
+
+Gestión avanzada de almacenamiento en AWS usando AWS CLI y Python. Incluye automatización de snapshots EBS con cron jobs, scripts Python para retención de snapshots, sincronización de directorios con S3, versionado de objetos, y recuperación de archivos eliminados.
+
+**Habilidades desarrolladas**:
+- ✅ Automatización de snapshots con cron
+- ✅ Scripts Python con Boto3
+- ✅ Sincronización S3 con AWS CLI
+- ✅ Versionado y recuperación de objetos
+- ✅ Gestión de IAM roles
+
+**[Ver documentación completa →](./labs/15-managing-storage/)**
+
+---
+
+### 16. [Working with Amazon S3](./labs/16-s3-file-sharing/)
+**Nivel**: Avanzado | **Duración**: ~90 min | **Servicios**: S3, IAM, SNS, EC2
+
+Configuración completa de S3 para compartir archivos de forma segura con usuarios externos. Incluye creación de buckets con AWS CLI, gestión de permisos IAM granulares, configuración de notificaciones de eventos S3, integración con Amazon SNS, y pruebas de seguridad.
+
+**Habilidades desarrolladas**:
+- ✅ Creación de buckets S3 con AWS CLI
+- ✅ Configuración de permisos IAM granulares
+- ✅ Event notifications S3 → SNS
+- ✅ Integración de email notifications
+- ✅ Testing de políticas de seguridad
+
+**[Ver documentación completa →](./labs/16-s3-file-sharing/)**
+
+---
+
+### 17. [Supervisión de la Infraestructura](./labs/17-infrastructure-monitoring/)
+**Nivel**: Avanzado | **Duración**: ~60 min | **Servicios**: CloudWatch, Config, SNS, Systems Manager
+
+Supervisión integral de infraestructura AWS. Incluye instalación de CloudWatch Agent con Systems Manager, monitoreo de logs y métricas, creación de alarmas basadas en filtros, notificaciones en tiempo real con EventBridge, y tracking de cumplimiento con AWS Config.
+
+**Habilidades desarrolladas**:
+- ✅ CloudWatch Agent deployment
+- ✅ Logs y métricas monitoring
+- ✅ Metric filters y alarmas
+- ✅ EventBridge real-time notifications
+- ✅ AWS Config compliance tracking
+
+**[Ver documentación completa →](./labs/17-infrastructure-monitoring/)**
+
+---
+
 ## 🎯 Objetivos de Aprendizaje
 
 Este portafolio demuestra conocimientos prácticos en:
@@ -250,13 +298,13 @@ Este portafolio demuestra conocimientos prácticos en:
 
 | Categoría | Labs Completados | En Progreso | Planeados |
 |-----------|------------------|-------------|-----------|
-| **Fundamentos** | 4 | 0 | 0 |
+| **Fundamentos** | 7 | 0 | 0 |
 | **Compute** | 4 | 0 | 0 |
-| **Storage** | 2 | 0 | 0 |
+| **Storage** | 4 | 0 | 0 |
 | **Networking** | 2 | 0 | 0 |
 | **Security** | 1 | 0 | 1 |
-| **Serverless** | 1 | 0 | 1 |
-| **Total** | **14** | **0** | **0** |
+| **Monitoring** | 1 | 0 | 0 |
+| **Total** | **17** | **0** | **0** |
 
 ## 🏗️ Estructura del Repositorio
 
@@ -278,7 +326,10 @@ aws-labs-portafolio/
 │   ├── 11-rds-migration/              # Lab 11: RDS Migration
 │   ├── 12-vpc-configuration/          # Lab 12: VPC Configuration
 │   ├── 13-vpc-troubleshooting/        # Lab 13: VPC Troubleshooting
-│   └── 14-amazon-ebs/                 # Lab 14: Amazon EBS
+│   ├── 14-amazon-ebs/                 # Lab 14: Amazon EBS
+│   ├── 15-managing-storage/           # Lab 15: Managing Storage
+│   ├── 16-s3-file-sharing/            # Lab 16: S3 File Sharing
+│   └── 17-infrastructure-monitoring/  # Lab 17: Infrastructure Monitoring
 └── resources/
     ├── templates/                     # Plantillas reutilizables
     └── common-scripts/                # Scripts compartidos
@@ -338,6 +389,6 @@ Este repositorio es para fines educativos y de documentación personal.
 
 ---
 
-**Última actualización**: Diciembre 2025 | **Labs completados**: 14/14 ✅ **100% COMPLETO**
+**Última actualización**: Diciembre 2025 | **Labs completados**: 17/17 🎉 **PORTAFOLIO COMPLETO**
 
 ⭐ Si encuentras útil este repositorio, considera darle una estrella!

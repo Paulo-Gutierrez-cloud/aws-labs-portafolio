@@ -1,0 +1,78 @@
+# CloudWatch Logs Metric Filter Pattern
+
+## 404 Errors Filter
+
+### Pattern
+```
+[ip, id, user, timestamp, request, status_code=404, size]
+```
+
+### Description
+This pattern extracts fields from Apache access logs and filters for HTTP 404 (Not Found) errors.
+
+### Fields Extracted
+- **ip**: Client IP address
+- **id**: Identity (usually -)
+- **user**: Authenticated user (usually -)
+- **timestamp**: Request timestamp
+- **request**: HTTP request line
+- **status_code**: HTTP status code (filtered for 404)
+- **size**: Response size in bytes
+
+### Example Log Line
+```
+192.168.1.100 - - [23/Dec/2025:10:30:45] "GET /nonexistent-page HTTP/1.1" 404 196
+```
+
+### Metric Configuration
+- **Metric Namespace**: LogMetrics
+- **Metric Name**: 404Errors
+- **Metric Value**: 1
+- **Default Value**: 0
+
+### Usage in Alarm
+- **Condition**: 404Errors >= 5
+- **Period**: 1 minute
+- **Statistic**: Sum
+- **Action**: Send SNS notification
+
+## Other Useful Patterns
+
+### 5xx Server Errors
+```
+[ip, id, user, timestamp, request, status_code=5*, size]
+```
+
+### Slow Requests (response time > 1000ms)
+```
+[ip, id, user, timestamp, request, status_code, size, response_time>1000]
+```
+
+### Failed Login Attempts
+```
+[timestamp, level=ERROR, message="*Failed login*"]
+```
+
+### High Traffic from Single IP
+```
+[ip, id, user, timestamp, request, status_code, size]
+```
+Filter by counting occurrences of same IP.
+
+## Testing the Pattern
+
+1. Navigate to CloudWatch → Log Groups
+2. Select your log group (e.g., HttpAccessLog)
+3. Create metric filter
+4. Paste pattern in "Filter Pattern" field
+5. Click "Test Pattern"
+6. Select log stream to test against
+7. View matched results
+
+## Best Practices
+
+1. **Test Patterns**: Always test with real log data
+2. **Field Names**: Use descriptive field names
+3. **Filters**: Be specific to avoid false positives
+4. **Metrics**: Create meaningful metric names
+5. **Documentation**: Document patterns for team
